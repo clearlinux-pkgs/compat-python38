@@ -178,9 +178,9 @@ export LANG=C
    /usr/include/python3.8/internal/pycore_pystate.h
    /usr/include/python3.8/internal/pycore_traceback.h
    /usr/include/python3.8/internal/pycore_tupleobject.h
-   /usr/include/python3.8/internal/pycore_warnings.h
-   /usr/lib64/pkgconfig/python-3.8-embed.pc
-   /usr/lib64/pkgconfig/python3-embed.pc
+%exclude   /usr/include/python3.8/internal/pycore_warnings.h
+%exclude   /usr/lib64/pkgconfig/python-3.8-embed.pc
+%exclude   /usr/lib64/pkgconfig/python3-embed.pc
 
 %files doc
 %exclude %{_mandir}/man1/*
