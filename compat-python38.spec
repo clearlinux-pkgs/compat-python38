@@ -59,8 +59,6 @@ License:        Python-2.0
 Summary:        The Python Programming Language
 Group:          devel/python
 
-Requires:       openstack-setuptools-python3
-Requires:       openstack-setuptools-bin
 
 
 %description core
