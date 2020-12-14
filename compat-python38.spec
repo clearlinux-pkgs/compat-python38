@@ -103,10 +103,7 @@ make %{?_smp_mflags}
 
 %make_install
 mv %{buildroot}/usr/lib/libpython*.so* %{buildroot}/usr/lib64/
-
-%check
-export LANG=C
-#LD_LIBRARY_PATH=`pwd` ./python -Wd -E -tt  Lib/test/regrtest.py -v -x test_asyncio test_uuid test_subprocess || :
+rm -rf %{buildroot}/usr/lib64/pkgconfig/python*embed.pc
 
 
 %files
@@ -143,7 +140,6 @@ export LANG=C
 %exclude /usr/lib64/pkgconfig/python3.pc
 %exclude /usr/lib64/pkgconfig/python-3.8.pc
 %exclude /usr/lib64/pkgconfig/python-3.8.pc
-%exclude /usr/lib64/pkgconfig/python-*embed*.pc
    /usr/include/python3.8/cpython/abstract.h
    /usr/include/python3.8/cpython/dictobject.h
    /usr/include/python3.8/cpython/fileobject.h
@@ -180,8 +176,6 @@ export LANG=C
    /usr/include/python3.8/internal/pycore_traceback.h
    /usr/include/python3.8/internal/pycore_tupleobject.h
 %exclude   /usr/include/python3.8/internal/pycore_warnings.h
-%exclude   /usr/lib64/pkgconfig/python-3.8-embed.pc
-%exclude   /usr/lib64/pkgconfig/python3-embed.pc
 
 %files doc
 %exclude %{_mandir}/man1/*
