@@ -1,6 +1,6 @@
 Name:           compat-python38
 Version:        3.8.1
-Release:        29
+Release:        30
 License:        Python-2.0
 Summary:        The Python Programming Language
 Url:            http://www.python.org
