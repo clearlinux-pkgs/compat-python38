@@ -143,6 +143,7 @@ export LANG=C
 %exclude /usr/lib64/pkgconfig/python3.pc
 %exclude /usr/lib64/pkgconfig/python-3.8.pc
 %exclude /usr/lib64/pkgconfig/python-3.8.pc
+%exclude /usr/lib64/pkgconfig/python-*embed*.pc
    /usr/include/python3.8/cpython/abstract.h
    /usr/include/python3.8/cpython/dictobject.h
    /usr/include/python3.8/cpython/fileobject.h
