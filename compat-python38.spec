@@ -129,6 +129,7 @@ rm -rf %{buildroot}/usr/lib64/pkgconfig/python*embed.pc
 /usr/bin/python3.8
 /usr/bin/python3.8-config
 /usr/lib/python3.8/
+/usr/bin/easy_install-3.8
 %exclude /usr/lib/python3.8/site-packages/pip
 %exclude /usr/lib/python3.8/distutils/command/*.exe
 
